@@ -1,0 +1,25 @@
+<html>
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<head>
+<title>ZoomMe Demo</title>
+<link rel="stylesheet" href="css/main.css?v=22" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+<script src="js/jquery.mousewheel.js"></script>
+<script src="js/jquery.zoomme.js?v=2"></script>
+</head>
+<body>
+	<div id="zoom-able-container">
+		<div id="zoom-able">
+			<img src="bild.jpg" />
+			<div style="position: absolute; top: 0px;">Hej!!!</div>
+		</div>
+	</div>
+<script>
+	$(window).load(function() {
+		$("#zoom-able-container").zoomMe('zoom-able');
+	});
+</script>
+</body>
+</html>
