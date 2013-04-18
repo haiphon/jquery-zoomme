@@ -49,6 +49,14 @@
     		}
 		});
 		$(this).children("#"+id).draggable();
+		$(this).bind('mousedown', function(e) {
+			$(this).addClass("grabdown");
+			$(this).removeClass('grab');
+		});
+		$(this).bind('mouseup', function(e) {
+			$(this).removeClass('grabdown');
+			$(this).addClass('grab');
+		});
 		/*
 		$(this).bind('mousedown', function(e, diffx, diffy, startx, starty) {
 			startx = e.pageX-parseInt($(self).children("#"+id).css('left'), 10);
