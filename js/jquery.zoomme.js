@@ -7,6 +7,11 @@
 *
 *   Simply - $(element-container).zoomMe('element-id') 
 *
+*	Todo:
+*	- Integrate touch events aka Pinch-Zoom! perhaps with https://github.com/HotStudio/touchy
+*	- Set constraints to drag
+*	
+*
 **/	
 (function($) {
   $.fn.zoomMe = function(id,options, width, height, zoom, dragging, self) {
